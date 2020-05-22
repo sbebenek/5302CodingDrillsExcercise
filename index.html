@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sam Bebenek Coding Challenges</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Coding Drill Excersise</h1>
+    <p>Sam Bebenek</p>
+
+    <h2>J1 2020: Dog Treats</h2>
+    <p>Enter the number of treats to determine if the dog is happy or sad.</p>
+    <form method="POST" action="#" onsubmit="return jOneSubmit();">
+        <div>
+            <label for="small">Small: </label>
+            <input type="number" name="small" id="small" />
+        </div>
+        <div>
+            <label for="medium">Medium: </label>
+            <input type="number" name="medium" id="medium" />
+        </div>
+        <div>
+            <label for="large">Large: </label>
+            <input type="number" name="large" id="large" />
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    <div id="jOneResults"></div>
+
+    <h2>J2 2020: Epidemiology</h2>
+    <p>When a person has a disease, they infect exactly R other people but only on the very next day. No
+        person is infected more than once. We want to determine when a total of more than P people have
+        had the disease.</p>
+    <form method="POST" action="#" onsubmit="return jTwoSubmit();">
+        <p>Treat Sizes: </p>
+        <div>
+            <label for="p">P, the total number of people: </label>
+            <input type="number" name="p" id="p" />
+        </div>
+        <div>
+            <label for="n">N, the number of people who have the disease on day one: </label>
+            <input type="number" name="n" id="n" />
+        </div>
+        <div>
+            <label for="r">R, how many people are infected each day: </label>
+            <input type="number" name="r" id="r" />
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    <div id="jTwoResults"></div>
+
+    <h2>J3 2020: Art</h2>
+    <p>Mahima has been experimenting with a new style of art. She stands in front of a canvas and, using
+        her brush, flicks drops of paint onto the canvas. When she thinks she has created a masterpiece,
+        she uses her 3D printer to print a frame to surround the canvas.</P>
+    <p>Your job is to help Mahima by determining the coordinates of the smallest possible rectangular
+        frame such that each drop of paint lies inside the frame. Points on the frame are not considered
+        inside the frame.</p>
+    <button onClick="resetFormThree();">Reset</button>
+    <div id="formThree">
+        <p>Number of points: </p>
+        <div>
+            <input type="number" name="numberOfPoints" id="numberOfPoints" />
+        </div>
+        <button onclick="submitPointsFormThree();">Submit</button>
+    </div>
+
+    <div id="jThreeResults"></div>
+</body>
+
+</html>
